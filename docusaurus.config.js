@@ -4,11 +4,11 @@ module.exports = {
   title: "ExcelToWordAutoReport",
   tagline:
     "Generate reports for your customers in word or pdf format from excel data automatically.",
-  url: "https://marcoslima.com/docs/ExcelToWordAutoReport",
-  baseUrl: "/docs/ExcelToWordAutoReport/",
+  url: "https://marcoslimacom.github.io",
+  baseUrl: "/ExcelToWordAutoReportDoc/",
   favicon: "img/logo.svg",
-  organizationName: "marcoslima", // Usually your GitHub org/user name.
-  projectName: "ExcelToWordAutoReport", // Usually your repo name.
+  organizationName: "marcoslimacom", // Usually your GitHub org/user name.
+  projectName: "ExcelToWordAutoReportDoc", // Usually your repo name.
   plugins: ['@docusaurus/plugin-google-analytics'],
   themeConfig: {
     navbar: {
@@ -31,8 +31,8 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://marcoslima.com/docs/ExcelToWordAutoReport",
-          label: "Online documentation",
+          href: "https://marcoslima.com",
+          label: "Marcos Lima Website",
           position: "right",
         },
       ],
