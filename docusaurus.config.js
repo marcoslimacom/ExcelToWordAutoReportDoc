@@ -26,7 +26,7 @@ module.exports = {
         },
         { to: "docs/change-logs", label: "Change Logs", position: "left" },
         {
-          href: "https://marcoslima.com/products/excel-to-word-auto-report",
+          href: "https://codecanyon.net/item/exceltowordautoreport/26324611",
           label: "Buy",
           position: "right",
         },
