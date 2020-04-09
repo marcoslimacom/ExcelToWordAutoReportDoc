@@ -1,0 +1,235 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;ExcelToWordAutoReport&rdquo; Documentation by &ldquo;Marcos Lima &rdquo; v1.0.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;ExcelToWordAutoReport&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 08/04/2020<br>
+					By: Marcos Lima<br>
+					Email: <a href="mailto:support@marcoslima.com">support@marcoslima.com</a>
+					Site: <a href="https://marcoslima.com" target="_blank">marcoslima.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my report system. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/marcoslimacom">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+
+		<ol id="toc" class="contents contents__left-border">
+			<li><a href="#requirements" class="contents__link">Requirements</a></li>
+			<li>
+			   <a href="#generate-reports" class="contents__link">Generate Reports</a>
+			   <ul>
+				  <li><a href="#open-the-src-folder" class="contents__link">Open the src folder</a></li>
+				  <li><a href="#run-startbat" class="contents__link">Run start.bat</a></li>
+				  <li><a href="#access-the-application-through-the-browser" class="contents__link">Access the application through the browser.</a></li>
+				  <li><a href="#generate-the-report" class="contents__link">Generate the report</a></li>
+			   </ul>
+			</li>
+			<li>
+			   <a href="#syntax" class="contents__link">Syntax</a>
+			   <ul>
+				  <li><a href="#date" class="contents__link">Date</a></li>
+				  <li><a href="#sheet" class="contents__link">Sheet</a></li>
+				  <li><a href="#user" class="contents__link">User</a></li>
+			   </ul>
+			</li>
+			<li>
+			   <a href="#word-templates" class="contents__link">Word Templates</a>
+			   <ul>
+				  <li><a href="#example" class="contents__link">Example</a></li>
+				  <li><a href="#example-with-graphics" class="contents__link">Example with graphics</a></li>
+				  <li><a href="#final-result-report-generated" class="contents__link">Final result (Report generated)</a></li>
+			   </ul>
+			</li>
+			<li><a href="#excel-data" class="contents__link">Excel Data</a></li>
+			<li><a href="#examples" class="contents__link">Examples</a></li>
+		</ol>
+		
+		<hr>
+		
+		<article>
+			<div class="markdown">
+			   <h2>
+				   <a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="requirements"></a>1) Requirements</h2>
+			   <table>
+				  <thead>
+					 <tr>
+						<th>Program / Framework</th>
+						<th align="center">Version</th>
+						<th align="right">Link to install</th>
+					 </tr>
+				  </thead>
+				  <tbody>
+					 <tr>
+						<td>Windows</td>
+						<td align="center">&gt;= 8.1</td>
+						<td align="right"><a href="https://www.microsoft.com/windows">Download</a></td>
+					 </tr>
+					 <tr>
+						<td>.Net core</td>
+						<td align="center">3.1</td>
+						<td align="right"><a href="https://dotnet.microsoft.com/download/dotnet-core/3.1">Download</a></td>
+					 </tr>
+					 <tr>
+						<td>MS Word</td>
+						<td align="center">&gt;= 2016 (365)</td>
+						<td align="right"><a href="https://www.office.com">Download</a></td>
+					 </tr>
+					 <tr>
+						<td>MS Excel</td>
+						<td align="center">&gt;= 2016 (365)</td>
+						<td align="right"><a href="https://www.office.com">Download</a></td>
+					 </tr>
+				  </tbody>
+			   </table>
+			   <p>The minimum requirements related to Office products must be observed for the application to behave properly.</p>
+			</div>
+		 </article>
+
+		 <hr>
+
+		<article>
+			<div class="markdown">
+			   <h2><a id="generate-reports" class="anchor enhancedAnchor_ZqCz" tabindex="-1" aria-hidden="true"></a>2) Generate Reports</h2>
+			   <h3><a id="open-the-src-folder" class="anchor enhancedAnchor_ZqCz" tabindex="-1" aria-hidden="true"></a><a class="hash-link" tabindex="-1" title="Direct link to heading" href="#open-the-src-folder" aria-hidden="true">#</a>Open the src folder</h3>
+			   <p><img title="Open the src folder" src="assets/img/how-to-use-open-src.png" alt="Open the src folder" /></p>
+			   <h3><a id="run-startbat" class="anchor enhancedAnchor_ZqCz" tabindex="-1" aria-hidden="true"></a><a class="hash-link" tabindex="-1" title="Direct link to heading" href="#run-startbat" aria-hidden="true">#</a>Run start.bat</h3>
+			   <p><img title="Run start.bat" src="assets/img/how-to-use-open-start.png" alt="Run start.bat" /></p>
+			   <p><img title="App started" src="assets/img/how-to-use-app-started.png" alt="App started" /></p>
+			   <h3><a id="access-the-application-through-the-browser" class="anchor enhancedAnchor_ZqCz" tabindex="-1" aria-hidden="true"></a><a class="hash-link" tabindex="-1" title="Direct link to heading" href="#access-the-application-through-the-browser" aria-hidden="true">#</a>Access the application through the browser.</h3>
+			   <p>Open your web browser and access the URL <a href="http://localhost:5000">http://localhost:5000</a>. <img title="Access the application through the browser" src="assets/img/how-to-use-open-brower.png" alt="Access the application through the browser" /></p>
+			   <h3><a id="generate-the-report" class="anchor enhancedAnchor_ZqCz" tabindex="-1" aria-hidden="true"></a><a class="hash-link" tabindex="-1" title="Direct link to heading" href="#generate-the-report" aria-hidden="true">#</a>Generate the report</h3>
+			   <ol>
+				  <li>
+					 <p>Expand the API <code>/api/Reporting/GenerateReport</code> and click on the <code>Try it out</code> button. <img title="Open the api and-click on try it out" src="assets/img/how-to-use-open-api-and-click-on-try.png" alt="Open the api and-click on try it out" /></p>
+				  </li>
+				  <li>
+					 <p>Select in the OutputType input which type of document the reports will be generated.<br /> Default option <code>-- -&gt; PDF</code><br /> Option <code>1 -&gt; PDF</code><br /> Option <code>2 -&gt; Word</code><br /> <img title="Open the api and-click on try it out" src="assets/img/how-to-use-choose-the-format.png" alt="Open the api and-click on try it out" /></p>
+				  </li>
+				  <li>
+					 <p>Select the files for the <code>excelfile</code> and <code>wordTemplatefile</code> inputs. <img title="Select the files" src="assets/img/how-to-use-select-the-files.png" alt="Select the files" /><br /> Open the <code>sample files</code> folder.<br /> <img title="Open the sample files folder" src="assets/img/how-to-use-open-sample-files.png" alt="Open the sample files folder" /><br /> Select the files in their respective inputs.<br /> <img title="Select the files in their respective inputs" src="assets/img/how-to-use-selects-word-and-excel-files.png" alt="Select the files in their respective inputs" /></p>
+				  </li>
+				  <li>
+					 <p>Click on <code>Execute</code> and wait for the execution to finish. <img title="Click on &quot;execute&quot; and wait for the execution to finish" src="assets/img/how-to-use-click-execute.png" alt="Click on &quot;execute&quot; and wait for the execution to finish" /></p>
+				  </li>
+				  <li>
+					 <p>Click on the <code>Download file</code> link and download the reports (Zipped). <img title="Click on the Download file link" src="assets/img/how-to-use-click-download-file.png" alt="Click on the Download file link " /> Generated reports.<br /> <img title="Generated reports" src="assets/img/how-to-use-generated-files.png" alt="Generated reports" /></p>
+				  </li>
+			   </ol>
+			   <h2><a id="syntax" class="anchor enhancedAnchor_ZqCz" tabindex="-1" aria-hidden="true"></a>3) Syntax</h2>
+			   <h3><a id="date" class="anchor enhancedAnchor_ZqCz" tabindex="-1" aria-hidden="true"></a><a class="hash-link" tabindex="-1" title="Direct link to heading" href="#date" aria-hidden="true">#</a>Date</h3>
+			   <ul>
+				  <li>Options<br /><code>Year</code>, <code>MonthFullName</code>, <code>MonthShortName</code>, <code>MonthNumber</code>, <code>Month</code>, <code>DayNumber</code>, <code>DayShortName</code>, <code>DayFullName</code>, <code>Day</code></li>
+				  <li>
+					 Examples<br />
+					 <div class="mdxCodeBlock_iHAB">
+						<div class="codeBlockContent_32p_">
+						   <button class="copyButton_1BYj" type="button" aria-label="Copy code to clipboard">Copy</button>
+						   <div class="prism-code language-javascript codeBlock_19pQ" tabindex="0">
+							  <div class="codeBlockLines_2n9r" style="color: #bfc7d5; background-color: #292d3e;">
+								 <div class="token-line" style="color: #bfc7d5;"><span class="token punctuation" style="color: #c792ea;">{</span><span class="token punctuation" style="color: #c792ea;">{</span><span class="token known-class-name class-name" style="color: #ffcb6b;">Date</span><span class="token punctuation" style="color: #c792ea;">:</span><span class="token maybe-class-name">DayFullName</span><span class="token punctuation" style="color: #c792ea;">,</span> <span class="token maybe-class-name">DayNumber</span> <span class="token maybe-class-name">MonthShortName</span> <span class="token maybe-class-name">Year</span><span class="token punctuation" style="color: #c792ea;">}</span><span class="token punctuation" style="color: #c792ea;">}</span> <span class="token comment" style="color: #697098; font-style: italic;">// Monday, 7 Apr 2020</span></div>
+								 <div class="token-line" style="color: #bfc7d5;"><span class="token punctuation" style="color: #c792ea;">{</span><span class="token punctuation" style="color: #c792ea;">{</span><span class="token known-class-name class-name" style="color: #ffcb6b;">Date</span><span class="token punctuation" style="color: #c792ea;">:</span><span class="token maybe-class-name">DayShortName</span><span class="token punctuation" style="color: #c792ea;">,</span> <span class="token maybe-class-name">DayNumber</span> <span class="token maybe-class-name">MonthShortName</span> <span class="token maybe-class-name">Year</span><span class="token punctuation" style="color: #c792ea;">}</span><span class="token punctuation" style="color: #c792ea;">}</span> <span class="token comment" style="color: #697098; font-style: italic;">// Mon, 7 Apr 2020</span></div>
+								 <div class="token-line" style="color: #bfc7d5;"><span class="token punctuation" style="color: #c792ea;">{</span><span class="token punctuation" style="color: #c792ea;">{</span><span class="token known-class-name class-name" style="color: #ffcb6b;">Date</span><span class="token punctuation" style="color: #c792ea;">:</span><span class="token maybe-class-name">Month</span><span class="token operator" style="color: #89ddff;">/</span><span class="token maybe-class-name">Day</span><span class="token operator" style="color: #89ddff;">/</span><span class="token maybe-class-name">Year</span><span class="token punctuation" style="color: #c792ea;">}</span><span class="token punctuation" style="color: #c792ea;">}</span> <span class="token comment" style="color: #697098; font-style: italic;">// 07/04/2020</span></div>
+								 <div class="token-line" style="color: #bfc7d5;"><span class="token punctuation" style="color: #c792ea;">{</span><span class="token punctuation" style="color: #c792ea;">{</span><span class="token known-class-name class-name" style="color: #ffcb6b;">Date</span><span class="token punctuation" style="color: #c792ea;">:</span><span class="token maybe-class-name">MonthNumber</span><span class="token operator" style="color: #89ddff;">/</span><span class="token maybe-class-name">DayNumber</span><span class="token operator" style="color: #89ddff;">/</span><span class="token maybe-class-name">Year</span><span class="token punctuation" style="color: #c792ea;">}</span><span class="token punctuation" style="color: #c792ea;">}</span> <span class="token comment" style="color: #697098; font-style: italic;">// 7/4/2020</span></div>
+								 <div class="token-line" style="color: #bfc7d5;"><span class="token punctuation" style="color: #c792ea;">{</span><span class="token punctuation" style="color: #c792ea;">{</span><span class="token known-class-name class-name" style="color: #ffcb6b;">Date</span><span class="token punctuation" style="color: #c792ea;">:</span><span class="token maybe-class-name">MonthFullName</span> <span class="token maybe-class-name">DayNumber</span><span class="token punctuation" style="color: #c792ea;">,</span> <span class="token maybe-class-name">Year</span><span class="token punctuation" style="color: #c792ea;">}</span><span class="token punctuation" style="color: #c792ea;">}</span> <span class="token comment" style="color: #697098; font-style: italic;">// April 7, 2020</span></div>
+							  </div>
+						   </div>
+						</div>
+					 </div>
+				  </li>
+			   </ul>
+			   <h3><a id="sheet" class="anchor enhancedAnchor_ZqCz" tabindex="-1" aria-hidden="true"></a><a class="hash-link" tabindex="-1" title="Direct link to heading" href="#sheet" aria-hidden="true">#</a>Sheet</h3>
+			   <ul>
+				  <li>
+					 Examples<br />
+					 <div class="mdxCodeBlock_iHAB">
+						<div class="codeBlockContent_32p_">
+						   <button class="copyButton_1BYj" type="button" aria-label="Copy code to clipboard">Copy</button>
+						   <div class="prism-code language-javascript codeBlock_19pQ" tabindex="0">
+							  <div class="codeBlockLines_2n9r" style="color: #bfc7d5; background-color: #292d3e;">
+								 <div class="token-line" style="color: #bfc7d5;"><span class="token punctuation" style="color: #c792ea;">{</span><span class="token punctuation" style="color: #c792ea;">{</span><span class="token maybe-class-name">Sheet</span><span class="token punctuation" style="color: #c792ea;">:</span><span class="token maybe-class-name">SheetName</span><span class="token punctuation" style="color: #c792ea;">}</span><span class="token punctuation" style="color: #c792ea;">}</span> <span class="token comment" style="color: #697098; font-style: italic;">// Copy the entire contents of the "SheetName" sheet and paste it into the report.</span></div>
+								 <div class="token-line" style="color: #bfc7d5;"><span class="token punctuation" style="color: #c792ea;">{</span><span class="token punctuation" style="color: #c792ea;">{</span><span class="token maybe-class-name">Sheet</span><span class="token punctuation" style="color: #c792ea;">:</span><span class="token maybe-class-name">SheetName</span><span class="token punctuation" style="color: #c792ea;">[</span><span class="token maybe-class-name">AsAImage</span><span class="token punctuation" style="color: #c792ea;">]</span><span class="token punctuation" style="color: #c792ea;">}</span><span class="token punctuation" style="color: #c792ea;">}</span> <span class="token comment" style="color: #697098; font-style: italic;">// Copy the entire contents of the sheet "SheetName" and paste it as an image in the report.</span></div>
+								 <div class="token-line" style="color: #bfc7d5;"><span class="token punctuation" style="color: #c792ea;">{</span><span class="token punctuation" style="color: #c792ea;">{</span><span class="token maybe-class-name">Sheet</span><span class="token punctuation" style="color: #c792ea;">:</span><span class="token maybe-class-name">SheetName</span><span class="token operator" style="color: #89ddff;">|</span><span class="token constant" style="color: #82aaff;">A1</span><span class="token punctuation" style="color: #c792ea;">:</span><span class="token constant" style="color: #82aaff;">F8</span><span class="token punctuation" style="color: #c792ea;">}</span><span class="token punctuation" style="color: #c792ea;">}</span> <span class="token comment" style="color: #697098; font-style: italic;">// Copy the content between row A1 and column F8 of the sheet "SheetName" and paste it into the report.</span></div>
+								 <div class="token-line" style="color: #bfc7d5;"><span class="token punctuation" style="color: #c792ea;">{</span><span class="token punctuation" style="color: #c792ea;">{</span><span class="token maybe-class-name">Sheet</span><span class="token punctuation" style="color: #c792ea;">:</span><span class="token maybe-class-name">SheetName</span><span class="token operator" style="color: #89ddff;">|</span><span class="token constant" style="color: #82aaff;">A1</span><span class="token punctuation" style="color: #c792ea;">:</span><span class="token constant" style="color: #82aaff;">F8</span><span class="token punctuation" style="color: #c792ea;">[</span><span class="token maybe-class-name">AsAImage</span><span class="token punctuation" style="color: #c792ea;">]</span><span class="token punctuation" style="color: #c792ea;">]</span><span class="token punctuation" style="color: #c792ea;">}</span><span class="token punctuation" style="color: #c792ea;">}</span> <span class="token comment" style="color: #697098; font-style: italic;">// Copy the content between row A1 and column F8 of the sheet "SheetName" and paste it as an image in the report.</span></div>
+								 <div class="token-line" style="color: #bfc7d5;"><span class="token punctuation" style="color: #c792ea;">{</span><span class="token punctuation" style="color: #c792ea;">{</span><span class="token maybe-class-name">Sheet</span><span class="token punctuation" style="color: #c792ea;">:</span><span class="token maybe-class-name">SheetName</span><span class="token operator" style="color: #89ddff;">|=</span><span class="token constant" style="color: #82aaff;">FORMULASTRING</span><span class="token punctuation" style="color: #c792ea;">}</span><span class="token punctuation" style="color: #c792ea;">}</span> <span class="token comment" style="color: #697098; font-style: italic;">// Execute the formula (Same syntax as excel) and paste it into the report</span></div>
+							  </div>
+						   </div>
+						</div>
+					 </div>
+				  </li>
+			   </ul>
+			   <h3><a id="user" class="anchor enhancedAnchor_ZqCz" tabindex="-1" aria-hidden="true"></a><a class="hash-link" tabindex="-1" title="Direct link to heading" href="#user" aria-hidden="true">#</a>User</h3>
+			   <p>The User option is activated when a sheet named Users exists in the input Excel file. A report will be generated for each row of the sheet named Users. Therefore, in the syntax it is only necessary to inform the name of the column.</p>
+			   <ul>
+				  <li>
+					 <p>Sheet Users<br /> <img title="Excel - Users sheet" src="assets/img/how-to-use-excel-user-sheet.png" alt="Excel - Users sheet" /></p>
+				  </li>
+				  <li>
+					 <p>Example</p>
+					 <div class="mdxCodeBlock_iHAB">
+						<div class="codeBlockContent_32p_">
+						   <button class="copyButton_1BYj" type="button" aria-label="Copy code to clipboard">Copy</button>
+						   <div class="prism-code language-javascript codeBlock_19pQ" tabindex="0">
+							  <div class="codeBlockLines_2n9r" style="color: #bfc7d5; background-color: #292d3e;">
+								 <div class="token-line" style="color: #bfc7d5;"><span class="token punctuation" style="color: #c792ea;">{</span><span class="token punctuation" style="color: #c792ea;">{</span><span class="token maybe-class-name">User</span><span class="token punctuation" style="color: #c792ea;">:</span><span class="token plain">first_name</span><span class="token punctuation" style="color: #c792ea;">}</span><span class="token punctuation" style="color: #c792ea;">}</span> <span class="token comment" style="color: #697098; font-style: italic;">// It will paste the user's first name. It will be done with each report (4 reports).</span></div>
+								 <div class="token-line" style="color: #bfc7d5;"><span class="token punctuation" style="color: #c792ea;">{</span><span class="token punctuation" style="color: #c792ea;">{</span><span class="token maybe-class-name">User</span><span class="token punctuation" style="color: #c792ea;">:</span><span class="token plain">last_name</span><span class="token punctuation" style="color: #c792ea;">}</span><span class="token punctuation" style="color: #c792ea;">}</span> <span class="token comment" style="color: #697098; font-style: italic;">// It will paste the user's last name. It will be done with each report (4 reports)</span></div>
+								 <div class="token-line" style="color: #bfc7d5;"><span class="token punctuation" style="color: #c792ea;">{</span><span class="token punctuation" style="color: #c792ea;">{</span><span class="token maybe-class-name">User</span><span class="token punctuation" style="color: #c792ea;">:</span><span class="token plain">country</span><span class="token punctuation" style="color: #c792ea;">}</span><span class="token punctuation" style="color: #c792ea;">}</span> <span class="token comment" style="color: #697098; font-style: italic;">// It will paste the user's country. It will be done with each report (4 reports)</span></div>
+							  </div>
+						   </div>
+						</div>
+					 </div>
+				  </li>
+			   </ul>
+			   <h2><a id="word-templates" class="anchor enhancedAnchor_ZqCz" tabindex="-1" aria-hidden="true"></a>4) Word Templates</h2>
+			   <p>Any type of word document <a href="requirements.html">See requirements</a>) can be an input template file, just add the Date, Sheet or User markings. To know more about the syntax of each markup click <a class="active" href="docs/how-to-use#syntax" aria-current="page">here</a>.</p>
+			   <p>All markings used within a template use data from the excel file. So if you use a markup in this format <code>{{Sheet: Coronavirus-2020-04-06|=TEXT(A1,"0")}}</code>, the report that will be generated and will have the place where the markup was entered, will be inserted information from cell <code>A1</code> of the <code>Coronavirus-2020-04-06</code> sheet.</p>
+			   <h3><a id="example" class="anchor enhancedAnchor_ZqCz" tabindex="-1" aria-hidden="true"></a><a class="hash-link" tabindex="-1" title="Direct link to heading" href="#example" aria-hidden="true">#</a>Example</h3>
+			   <p>Note that in this example the markings are underlined in red.<br /> <img title="Word template" src="assets/img/how-to-use-word-template.png" alt="Word template" /></p>
+			   <h3><a id="example-with-graphics" class="anchor enhancedAnchor_ZqCz" tabindex="-1" aria-hidden="true"></a><a class="hash-link" tabindex="-1" title="Direct link to heading" href="#example-with-graphics" aria-hidden="true">#</a>Example with graphics</h3>
+			   <p>In the graphics you insert in the word there is a built-in excel. It is also possible to add the markings. Here is an example:<br /> <img title="Word template" src="assets/img/how-to-use-add-data-in-charts.png" alt="Word template" /></p>
+			   <h3><a id="final-result-report-generated" class="anchor enhancedAnchor_ZqCz" tabindex="-1" aria-hidden="true"></a><a class="hash-link" tabindex="-1" title="Direct link to heading" href="#final-result-report-generated" aria-hidden="true">#</a>Final result (Report generated)</h3>
+			   <p><img title="Generated report part 1" src="assets/img/how-to-use-generated-file-part-1.png" alt="Generated report part 1" /></p>
+			   <h2><a id="excel-data" class="anchor enhancedAnchor_ZqCz" tabindex="-1" aria-hidden="true"></a>5) Excel Data</h2>
+			   <p>It is very important that the excel file that will be used to be the data input for the report, be it a file that does not do any other function, only has the necessary data for the report. This guarantees better performance when generating reports.</p>
+			   <ul>
+				  <li>Example<br /><br /><img title="Coronavirus sheet" src="assets/img/how-to-use-excel-coronavirus-sheet.png" alt="Coronavirus sheet" /></li>
+			   </ul>
+			   <h2><a id="examples" class="anchor enhancedAnchor_ZqCz" tabindex="-1" aria-hidden="true"></a>6) Examples</h2>
+			   <p>Create sample reports with the <a class="active" href="#generate-reports" aria-current="page">Generate Report</a> step by step.</p>
+			</div>
+		 </article>
+	
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
